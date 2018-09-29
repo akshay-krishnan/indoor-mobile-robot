@@ -14,8 +14,6 @@ mapimage = cv2.imread('map4.pgm')
 depth = ()
 arduino_ack = 0
 vals = []
-x = 172
-y = 150
 orient = math.pi/2
 pub=rospy.Publisher('array_values',Int16MultiArray,queue_size = 10)
 rospy.init_node('pub_marray')
