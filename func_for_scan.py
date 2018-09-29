@@ -68,10 +68,3 @@ def getScan(P1):
         x = np.amin(indices)
         print (itbuffer[x,0], itbuffer[x,1])
         return (itbuffer[x,0], itbuffer[x,1])
-
-
-d2_map = cv2.cvtColor(cv2.imread('map.pgm'),cv2.COLOR_BGR2GRAY)
-p1 = (1000, 750)
-p2 = (750, 1000)
-line = createLineIterator(p1, p2, d2_map)
-print line
