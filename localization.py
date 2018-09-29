@@ -62,7 +62,6 @@ def senseWorld():
 N = 250
 particles = []
 img1 = mapimage.copy()
-print type(img1)
 
 for i in range(0, N):
 	particles.append(robot())
@@ -94,7 +93,6 @@ while mainloop <2 or particles.length == 0:
 	print weights
 	w1 = weights[:]
 	w1.sort(reverse=True)
-	print w1
 	p1 = []
 	mw = max(weights)
 	index = int(random.random()*N)
@@ -112,7 +110,6 @@ while mainloop <2 or particles.length == 0:
 
 	cv2.imshow('filtered', img3)
 	cv2.waitKey(0)
-	print p1
 	particles = p1
 	
 
